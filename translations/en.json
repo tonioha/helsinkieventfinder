@@ -16,5 +16,6 @@
     "remove_from_fav": "Remove from favorites",
     "added_to_fav": "Added to favorites",
     "removed_fav": "Removed from favorites",
-    "already_fav": "Item is already in favorites"
+    "already_fav": "Item is already in favorites",
+    "err_fav_save": "Error, couldn't save to favorites"
 }
