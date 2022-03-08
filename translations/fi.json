@@ -10,5 +10,12 @@
     "clear": "Tyhjennä",
     "show_on_map": "Näytä kartalla",
     "start": "Aloitus: ",
-    "stop": "Lopetus: "
+    "stop": "Lopetus: ",
+    "favorites": "Suosikit",
+    "add_to_fav": "Lisää suosikkeihin",
+    "remove_from_fav": "Poista suosikeista",
+    "added_to_fav": "Lisätty suosikkeihin",
+    "removed_fav": "Poistettu suosikeista",
+    "already_fav": "Kohde on jo suosikeissa",
+    "err_fav_save": "Virhe tallennettaessa suosikkeihin"
 }

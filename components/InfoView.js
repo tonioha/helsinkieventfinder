@@ -31,7 +31,7 @@ const InfoView = (props) => {
         const favsDeleted = value.filter(i => i.id !== item.id);
         try {
           await AsyncStorage.setItem("favorites", JSON.stringify(favsDeleted));
-          Toast.show('Poistettu suosikeista');
+          Toast.show(t("removed_fav"));
           setIsFavorited(false);
           props.favorited = false;
         } catch (err) {
@@ -50,13 +50,13 @@ const InfoView = (props) => {
             try {
               await AsyncStorage.setItem("favorites", JSON.stringify(favs));
               setIsFavorited(true);
-              Toast.show('Lisätty suosikkeihin');
+              Toast.show(t("added_to_fav"));
             } catch (err) {
               console.log("Saving error: " + err);
-              Toast.show('Virhe tallennettaessa suosikkeihin');
+              Toast.show(t("err_fav_save"));
             }
           } else {
-            Toast.show('Kohde on jo suosikeissa');
+            Toast.show(t("already_fav"));
           }
 
         } else {
@@ -87,7 +87,7 @@ const InfoView = (props) => {
         </View>
         <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
           <OpenMapButton title={t("show_on_map")} onPress={() => props.onPress()}></OpenMapButton>
-          <OpenMapButton title={isFavorited === true ? "Poista suosikeista" : "Lisää suosikkeihin"} onPress={() => toggleFavorite(props.item, props.type)}></OpenMapButton>
+          <OpenMapButton title={isFavorited === true ? t("remove_from_fav") : t("add_to_fav")} onPress={() => toggleFavorite(props.item, props.type)}></OpenMapButton>
         </View>
         {props.type === "events" ? (
           <View>

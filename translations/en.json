@@ -10,5 +10,11 @@
     "clear": "Clear",
     "show_on_map": "Show on map",
     "start": "Starts: ",
-    "stop": "Ends: "
+    "stop": "Ends: ",
+    "favorites": "Favorites",
+    "add_to_fav": "Add to favorites",
+    "remove_from_fav": "Remove from favorites",
+    "added_to_fav": "Added to favorites",
+    "removed_fav": "Removed from favorites",
+    "already_fav": "Item is already in favorites"
 }
